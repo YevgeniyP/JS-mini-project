@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+  --body-background-color: #557eee;
+  --wrapper-background-color: #ffffff;
+  --box-shadow-color: #cccccc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--body-background-color);
+  display: grid;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 90vw;
+  margin: 3vw;
+  padding: 2vw;
+  background: var(--wrapper-background-color);
+  border-radius: 3vh;
+}
+
+.header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 160%;
+  text-shadow: 3px 3px 5px var(--box-shadow-color);
+}
+
+#user-list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2vh;
+}
+
+.list-element {
+  border: 2px solid var(--body-background-color);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px var(--box-shadow-color);
+  padding: 15px 20px;
+}
+
+.user-list-element {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+
+.user-list-element > p {
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.details-button {
+  padding: 10px 15px;
+  background: var(--body-background-color);
+  color: var(--wrapper-background-color);
+  border: none;
+  border-radius: 20px;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+#user-details {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2,auto);
+  gap: 3vh;
+}
+
+.user-details-header {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.user-details-paragraph {
+  line-height: 170%;
+}
+
+.user-posts-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 1vw;
+}
+
+.user-post-list-element {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 2vh;
+}
+
+#post-comments {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  gap: 1vw;
+}
